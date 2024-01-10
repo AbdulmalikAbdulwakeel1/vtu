@@ -1,0 +1,93 @@
+/* Style for the modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 3000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 60px;
+
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 3% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%;
+  border-radius: 15px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.modal-form h4{
+  font-size: 20px;
+}
+.modal-form input[type="number"]{
+    outline: none;
+    padding: 5px;
+    background-color: var(--light);
+    color: var(--dark);
+    border: none;
+    border-left: 2px solid var(--dark);
+    border-right: 2px solid var(--dark);
+    border-radius: 10px;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 100%;
+    height: 35px;
+}
+.modal-form input[type="number"]::placeholder{
+  color: var(--dark);
+}
+.modal-form .button{
+    width: 50%;
+    margin-top: 10px;
+    border-radius: 12px;
+    background-color: var(--blue);
+    color: var(--light);
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.modal.success .modal-content{
+  text-align: center;
+}
+
+.modal.success .modal-content .con{
+  text-align:center; 
+  display:flex; 
+  flex-direction:column;
+  justify-content: center; 
+  align-items: center; 
+}
+.modal.success .modal-content .con img{
+  border-radius:50%;
+}
+.modal.success .modal-content .con p{
+  font-size: 18px;
+  margin: 5px 0;
+}
+.modal.success .modal-content .con a{
+  color: var(--light);
+  margin-top:10px;
+  background-color: var(--red);
+  width: 50%;
+  padding: 10px;
+  border-radius: 12px;
+}
